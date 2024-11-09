@@ -4,6 +4,37 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>PaginationSdlBsso</PackageId>
+    <Title>Pagination</Title>
+    <Authors>serdel1979</Authors>
+    <Company>SergioSDL</Company>
+    <Description>Paquete NuGet para la paginación de consultas en Entity Framework Core compatible con SQL Server, PostgreSQL, MySQL y Oracle. Facilita la gestión de resultados paginados para mejorar la eficiencia de las aplicaciones.</Description>
+    <Copyright>© 2024 Sergio De Luca</Copyright>
+    <PackageProjectUrl>https://github.com/serdel1979/pagination</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/serdel1979/pagination</RepositoryUrl>
+    <PackageTags>paginacion;pagination</PackageTags>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.10" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.10" />
+    <PackageReference Include="Oracle.EntityFrameworkCore" Version="8.23.60" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
