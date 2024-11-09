@@ -10,7 +10,8 @@ Para instalar el paquete `PaginationSdlBsso` en tu proyecto, usa el siguiente co
 dotnet add package PaginationSdlBsso
 ```
 
-Ejemplo de uso
+## Ejemplo de uso
+
 Asegúrate de agregar el siguiente using al principio de tu archivo de código:
 
 ```
@@ -30,19 +31,17 @@ public async Task<IActionResult> GetItems(int pageNumber = 1, int pageSize = 10)
 ```
 ## Descripción del código:
 
-### GetItems: Este método GET obtiene los elementos desde la base de datos de manera paginada.
-### ToPaginatedListAsync: Es el método de extensión que se aplica a la consulta Items de tu DbContext, y recibe los 
-### parámetros pageNumber y pageSize para determinar qué resultados devolver.
+- **GetItems:** Este método GET obtiene los elementos desde la base de datos de manera paginada.
+- **ToPaginatedListAsync:** Es el método de extensión que se aplica a la consulta Items de tu DbContext, y recibe los 
+parámetros pageNumber y pageSize para determinar qué resultados devolver.
 
-El resultado paginatedResult contiene:
+## El resultado paginatedResult contiene:
 
-### Items: Una lista de los elementos de la página solicitada.
-### TotalCount: El número total de elementos en la base de datos.
-### PageSize: El número de elementos por página.
-### PageNumber: El número de la página actual.
+- **Items:** Una lista de los elementos de la página solicitada.
+- **TotalCount:** El número total de elementos en la base de datos.
+- **PageSize:** El número de elementos por página.
+- **PageNumber:** El número de la página actual.
 
-Contribuciones
-Las contribuciones son bienvenidas. Si tienes ideas o mejoras para este paquete, por favor abre un issue o un pull request.
 
 Licencia
 Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo LICENSE para más detalles.
