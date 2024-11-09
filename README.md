@@ -8,18 +8,17 @@ Para instalar el paquete `PaginationSdlBsso` en tu proyecto, usa el siguiente co
 
 ```bash
 dotnet add package PaginationSdlBsso
-
+```
 
 Ejemplo de uso
 Asegúrate de agregar el siguiente using al principio de tu archivo de código:
 
-csharp
-Copiar código
+```
 using Pagination.Extensions;
-
+```
 Luego, en tu controlador de API, puedes usar el siguiente código para obtener los elementos paginados:
 
-
+```bash
 [HttpGet]
 public async Task<IActionResult> GetItems(int pageNumber = 1, int pageSize = 10)
 {
@@ -28,7 +27,7 @@ public async Task<IActionResult> GetItems(int pageNumber = 1, int pageSize = 10)
 
     return Ok(paginatedResult);
 }
-
+```
 Descripción del código:
 GetItems: Este método obtiene los elementos desde la base de datos de manera paginada.
 ToPaginatedListAsync: Es el método de extensión que se aplica a la consulta Items de tu DbContext, y recibe los parámetros pageNumber y pageSize para determinar qué resultados devolver.
