@@ -28,14 +28,17 @@ public async Task<IActionResult> GetItems(int pageNumber = 1, int pageSize = 10)
     return Ok(paginatedResult);
 }
 ```
-Descripción del código:
+## Descripción del código:
 GetItems: Este método obtiene los elementos desde la base de datos de manera paginada.
 ToPaginatedListAsync: Es el método de extensión que se aplica a la consulta Items de tu DbContext, y recibe los parámetros pageNumber y pageSize para determinar qué resultados devolver.
+
 El resultado paginatedResult contiene:
+
 Items: Una lista de los elementos de la página solicitada.
 TotalCount: El número total de elementos en la base de datos.
 PageSize: El número de elementos por página.
 PageNumber: El número de la página actual.
+
 Contribuciones
 Las contribuciones son bienvenidas. Si tienes ideas o mejoras para este paquete, por favor abre un issue o un pull request.
 
