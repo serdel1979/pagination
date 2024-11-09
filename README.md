@@ -43,5 +43,6 @@ parámetros pageNumber y pageSize para determinar qué resultados devolver.
 - **PageNumber:** El número de la página actual.
 
 
-Licencia
+## Licencia:
+
 Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo LICENSE para más detalles.
